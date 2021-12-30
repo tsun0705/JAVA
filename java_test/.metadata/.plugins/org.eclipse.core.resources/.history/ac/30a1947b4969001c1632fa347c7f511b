@@ -1,0 +1,14 @@
+package test03;
+
+public class SumArray {
+
+	public static void main(String[] args) {
+		int[] x = {1,2,3,4,5};
+		double sum =0;
+		for(int i=0; i<x.length; i++) {
+			sum += (double)x[i];
+		}
+		System.out.println(sum);
+	}
+
+}

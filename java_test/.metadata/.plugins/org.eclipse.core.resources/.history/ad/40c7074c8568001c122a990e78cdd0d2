@@ -1,0 +1,20 @@
+package test02;
+
+import java.util.Scanner;
+
+public class Jinsu {
+
+	public static void main(String[] args) {
+		System.out.println("10진수를 입력하세요.");
+		
+		Scanner sc = new Scanner(System.in);
+		int a = Integer.parseInt(sc.next());
+		sc.close();
+		
+		System.out.println("10진수 : " + a);
+		System.out.println("2진수 : " + Integer.toBinaryString(a));
+		System.out.println("8진수 : " + Integer.toOctalString(a));
+		System.out.println("16진수 : " + Integer.toHexString(a));
+	}
+
+}

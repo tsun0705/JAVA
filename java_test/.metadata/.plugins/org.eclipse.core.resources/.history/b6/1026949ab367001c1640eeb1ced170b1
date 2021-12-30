@@ -1,0 +1,25 @@
+package test01;
+
+import java.util.Scanner;
+
+public class Mid {
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("세 정수의 중간값을 구하시오");
+		System.out.println("a의 값");
+		int a = sc.nextInt();
+		System.out.println("b의 값");
+		int b = sc.nextInt();
+		System.out.println("c의 값");
+		int c = sc.nextInt();
+		
+		int mid = 0;
+		if ((a > b && a < c) || (a < b && a > c)) mid = a;
+		if ((b > a && b < c) || (b < a && b > c)) mid = b;
+		if ((c > b && c < a) || (c > a && c < b)) mid = a;
+		
+		
+		System.out.println("중간값: " + mid);
+	}
+}

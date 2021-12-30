@@ -1,0 +1,28 @@
+package test02;
+
+import java.util.Scanner;
+
+public class ArrayInt {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("정수를 입력하세요");
+		int b = sc.nextInt();\
+
+		System.out.println("정수를 입력하세요");
+		int c = sc.nextInt();
+
+		System.out.println("정수를 입력하세요");
+		int d = sc.nextInt();
+		
+		int[] a = {b,c,d};
+		
+		if ((a[b] > a[c] && a[b] < a[d]) || (a[b] < a[c] && a[b] > a[d])) System.out.println("중간값: " + a[b]);
+		else if ((a[c] > a[b] && a[c] < a[d]) || (a[c] < a[b] && a[c] > a[d])) System.out.println("중간값: " + a[c]);
+		else if ((a[d] > a[c] && a[d] < a[b]) || (a[d] > a[b] && a[d] < a[c])) System.out.println("중간값: " + a[d]);
+		else System.out.println("잘못 입력했습니다.");
+	}
+
+}
